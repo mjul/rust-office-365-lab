@@ -1,0 +1,13 @@
+[package]
+name = "rust_office_365_lab"
+version = "0.1.0"
+edition = "2024"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+azure_identity = "0.23.0" # For handling Azure/Entra ID authentication
+azure_core = "0.23.0" # Added dependency for TokenCredential trait and other core types
+reqwest = { version = "0.12.15", features = ["json"] } # For making HTTP requests to Graph API
+tokio = { version = "1.44.2", features = ["full"] } # Async runtime
+url = "2.5.4" # For URL parsing needed by azure_identity scope
