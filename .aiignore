@@ -1,0 +1,9 @@
+# AI tools must ignore these files and directories
+
+*.tmp
+*.log
+Cargo.lock
+
+.git
+.idea
+target
